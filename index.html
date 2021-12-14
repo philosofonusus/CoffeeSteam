@@ -2,7 +2,7 @@
         let typed
 const addOnScreen = (entries, observer) => {
   entries.forEach(entry => {
-    if(!entry.target.classList.contains("wasonscreen") && entry.target.classList.contains('typing')){
+    if(entry.target.classList.contains("wasonscreen") && entry.target.classList.contains('typing')){
 
         const options = {
             strings: ['Мы сеть кофеен третьей волны "<span class="highlight">Steam</span>" работаем с 2017-го года. Наши ценности это реализация прибыльных человекоориентированных проектов, в основе которых лежит качество сервиса и продукта, сильная и единая команда, развитие кофейной культуры в соотвествии с мировыми трендами. Мы просто любим свою работу и ценим ваше время'],
