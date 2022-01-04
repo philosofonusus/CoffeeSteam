@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: build/index.html
+  label: INdex
+  match: "**/*"
+- type: document
   path: src/index.njk
   label: ukr
-  match: "**/*"
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''
