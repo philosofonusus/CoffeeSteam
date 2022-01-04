@@ -7,7 +7,6 @@ sections:
 - type: document
   path: build/index.html
   label: ukr
-  match: "**/*"
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''
