@@ -1,0 +1,19 @@
+---
+label: title
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: headerTitle
+  label: headerTitle
+- type: textarea
+  name: headerDescription
+  label: headerDescription
+- type: text
+  name: layout
+  label: layout
