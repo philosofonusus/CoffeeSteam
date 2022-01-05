@@ -28,6 +28,12 @@ fields:
       max: 
       labelField: 
     label: 1step
+    fields:
+    - name: step
+      type: text
+      config:
+        required: false
+      label: step
   - name: 2step
     type: field_group_list
     config:
