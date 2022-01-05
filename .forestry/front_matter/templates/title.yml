@@ -41,6 +41,12 @@ fields:
       max: 
       labelField: 
     label: 2step
+    fields:
+    - name: step
+      type: text
+      config:
+        required: false
+      label: step
   - name: 3step
     type: field_group_list
     config:
@@ -48,6 +54,12 @@ fields:
       max: 
       labelField: 
     label: 3step
+    fields:
+    - name: step
+      type: text
+      config:
+        required: false
+      label: step
   - name: 4step
     type: field_group_list
     config:
@@ -55,6 +67,12 @@ fields:
       max: 
       labelField: 
     label: 4step
+    fields:
+    - name: step
+      type: text
+      config:
+        required: false
+      label: step
   - name: 5step
     type: field_group_list
     config:
@@ -62,6 +80,12 @@ fields:
       max: 
       labelField: 
     label: 5step
+    fields:
+    - name: step
+      type: text
+      config:
+        required: false
+      label: step
   - name: 1steptitle
     type: text
     config:
