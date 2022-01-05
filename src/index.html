@@ -232,8 +232,8 @@ cafeformats:
                     <div class="steps-create__line"></div>
                 </div>
                 <div class="steps-create__step-description">
-                    {%- for step in steps.2step -%}
-                        <li>{{ step.data.step }}</li>
+                    {%- for el in steps.2step -%}
+                        <li>{{ el.step }}</li>
                     {%- endfor -%}
                 </div>
             </div>
