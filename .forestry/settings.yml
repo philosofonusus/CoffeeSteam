@@ -5,9 +5,6 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: build/index.html
-  label: INdex
-- type: document
   path: src/index.njk
   label: ukr
 upload_dir: assets/images
