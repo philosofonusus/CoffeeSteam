@@ -8,7 +8,7 @@ sections:
   path: src/index.html
   label: ukrIndex
 upload_dir: src/assets/images
-public_path: "/src/assets/images"
+public_path: "/builld/assets/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
