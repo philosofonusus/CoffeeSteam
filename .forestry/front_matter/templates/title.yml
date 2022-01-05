@@ -1,5 +1,5 @@
 ---
-label: title
+label: indexTemplate
 hide_body: false
 fields:
 - type: text
