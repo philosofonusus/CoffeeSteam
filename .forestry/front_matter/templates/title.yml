@@ -17,13 +17,43 @@ fields:
 - type: text
   name: layout
   label: layout
-- name: 1step
+- name: steps
   type: field_group
   config: {}
   fields:
-  - name: step
-    type: text
+  - name: 1step
+    type: field_group_list
     config:
-      required: false
-    label: step
-  label: 1step
+      min: 
+      max: 
+      labelField: 
+    label: 1step
+  - name: 2step
+    type: field_group_list
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: 2step
+  - name: 3step
+    type: field_group_list
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: 3step
+  - name: 4step
+    type: field_group_list
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: 4step
+  - name: 5step
+    type: field_group_list
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: 5step
+  label: steps
