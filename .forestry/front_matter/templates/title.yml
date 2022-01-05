@@ -61,6 +61,76 @@ fields:
   type: file
   config:
     maxSize: 64
-  label: entryBackGround
+  label: entryBackground
+- name: aboutusimage
+  type: file
+  config:
+    maxSize: 64
+  label: aboutUsImage
+- name: cafeformats
+  type: field_group
+  config: {}
+  fields:
+  - name: cafeformat1
+    type: field_group
+    config: {}
+    fields:
+    - name: cover
+      type: file
+      config:
+        maxSize: 64
+      label: cover
+    - name: title
+      type: text
+      config:
+        required: false
+      label: title
+    - name: size
+      type: text
+      config:
+        required: false
+      label: size
+    label: cafeFormat1
+  - name: cafeformat2
+    type: field_group
+    config: {}
+    fields:
+    - name: cover
+      type: file
+      config:
+        maxSize: 64
+      label: cover
+    - name: title
+      type: text
+      config:
+        required: false
+      label: title
+    - name: size
+      type: text
+      config:
+        required: false
+      label: size
+    label: cafeFormat2
+  - name: cafeformat3
+    type: field_group
+    config: {}
+    fields:
+    - name: cover
+      type: file
+      config:
+        maxSize: 64
+      label: cover
+    - name: title
+      type: text
+      config:
+        required: false
+      label: title
+    - name: size
+      type: text
+      config:
+        required: false
+      label: size
+    label: cafeFormat3
+  label: cafeFormats
 pages:
 - src/index.html
