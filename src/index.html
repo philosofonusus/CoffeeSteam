@@ -118,16 +118,10 @@ cafeformats:
                     <div class="more" id="more1">
                         <div class="more-description">
                             <p>
-                                
-                                Інтер‘єр - &#60;$325 м2<br>
-Меблі - &#60;$6000<br>
-Брендування - &#60;$800<br>
-Обладнання - &#60;$3000<br>
-Інвентар - &#60;$1500<br>
-Склад - &#60;$1500<br>
-Аренда - &#60;$29<br>
-Паушальний внесок - $2000+10%<br>
-Рекламна кампанія - &#60;$500<br>
+                                {%- for el in cafeformats.cafeformat1.details -%}
+                                     {{ el.detail }}<br>
+                               {%- endfor -%}
+
                             </p>
                         </div>
                         <span class="more-title" id="more-button1">
@@ -148,15 +142,10 @@ cafeformats:
                     <div class="more" id="more2">
                         <div class="more-description">
                             <p>
-                                Інтер‘єр - &#60;$325 м2 <br>
-                                Меблі - &#60;$10000<br>
-Брендування - &#60;$1000<br>
-Обладнання - &#60;$5000<br>
-Інвентар - &#60;$1500<br>
-Склад - &#60;$1500<br>
-Аренда - &#60;$29<br>
-Паушальний внесок - $2000+10%<br>
-Рекламна кампанія - &#60;$ 500<br>
+                                {%- for el in cafeformats.cafeformat2.details -%}
+                                    {{ el.detail }}<br>
+                                {%- endfor -%}
+                            </p>
                         </div>
                        <span class="more-title" id="more-button2">
                         Детальніше
@@ -176,15 +165,9 @@ cafeformats:
                     <div class="more" id="more3">
                         <div class="more-description">
                             <p>
-                                Інтер‘єр - &#60;$325 м2                            <br>
-                                Меблі - &#60;$18000                            <br>
-                                Брендування -&#60;$1500                            <br>
-                                Обладнання -&#60;$7000                            <br>
-                                Інвентар - &#60;$2000                            <br>
-                                Склад - &#60;$2000                             <br>
-                                Аренда - &#60;$29                            <br>
-                                Паушальний внесок - $2000+10%                            <br>
-                                Рекламна кампанія - &#60;$500                            <br>
+                                {%- for el in cafeformats.cafeformat3.details -%}
+                                 {{ el.detail }}<br>
+                                {%- endfor -%}
                             </p>
                         </div>
                         <span class="more-title" id="more-button3">
@@ -268,7 +251,7 @@ cafeformats:
                     <div class="steps-create__line"></div>
                 </div>
                 <div class="steps-create__step-description">
-                    {%- for el in steps.3step -%}
+                    {%- for el in steps.4step -%}
                         <p>{{ el.step }}</p>
                     {%- endfor -%}
                 </div>
@@ -286,10 +269,9 @@ cafeformats:
                     <div class="steps-create__line"></div>
                 </div>
                 <div class="steps-create__step-description">
-                    <p>- Рекламна кампанія</p>
-                    <p>- Навчання адміністратора</p>
-                    <p>- Атестація персоналу</p>
-                    <p>-Передача проекту франчайзі </p>
+                    {%- for el in steps.5step -%}
+                        <p>{{ el.step }}</p>
+                    {%- endfor -%}
                 </div>
             </div>
             <div class="steps-create__container_end">
