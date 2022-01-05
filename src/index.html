@@ -206,7 +206,7 @@ cafeformats:
                   1
                 </div>
                 <h3 class="steps-create__step-title">
-                    Создание бизнес планa
+                    {{collections.steps.1steptitle}}
                 </h3>
             </div>
             <div class="steps-create__with-line-container">
@@ -224,7 +224,7 @@ cafeformats:
                   2
                 </div>
                 <h3 class="steps-create__step-title">
-                    Основні роботи
+                    {{collections.steps.2steptitle}}
                 </h3>
             </div>
             <div class="steps-create__with-line-container">
@@ -232,10 +232,9 @@ cafeformats:
                     <div class="steps-create__line"></div>
                 </div>
                 <div class="steps-create__step-description">
-                    <p>- Будівельні роботи</p>
-                    <p>- Виготовлення меблів</p>
-                    <p>- Замовлення обладнання та інвентарю</p>
-                    <p>- Замовлення рекламних конструкцій</p>
+                    {%- for step in collections.steps.2step -%}
+                        <li>{{ step.data.step }}</li>
+                    {%- endfor -%}
                 </div>
             </div>
             <div class="steps-create__step">
@@ -243,7 +242,7 @@ cafeformats:
                   3
                 </div>
                 <h3 class="steps-create__step-title">
-                    Підготовка до відкриття
+                    {{collections.steps.3steptitle}}
                 </h3>
             </div>
             <div class="steps-create__with-line-container">
@@ -261,7 +260,7 @@ cafeformats:
                   4
                 </div>
                 <h3 class="steps-create__step-title">
-                    Открытие
+                    {{collections.steps.4steptitle}}
 
                 </h3>
             </div> 
@@ -281,7 +280,7 @@ cafeformats:
                   5
                 </div>
                 <h3 class="steps-create__step-title">
-                    Вихід у прибуток
+                    {{collections.steps.5steptitle}}
                 </h3>
             </div>
             <div class="steps-create__with-line-container">
