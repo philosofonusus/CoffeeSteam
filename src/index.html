@@ -97,7 +97,7 @@ cafeformats:
                         <span class="typing"></span>
                     </p>
                 </div>
-                <img src="../assets/images/group4.png" alt="Super Team">  
+                <img src="{{aboutusimage}}" alt="Super Team">  
             </div>
 
         </div>
@@ -111,9 +111,9 @@ cafeformats:
         <div class="coffeehouse-table">
             <div class="coffeehouse-table__el">
 
-                <h3 class="title">Круто To Go</h3>
+                <h3 class="title">{{cafeformats.cafeformat1.title}}</h3>
                 <div class="cover">
-                    <img src="../assets/images/cafe.webp" alt="To Go">
+                    <img src="{{cafeformats.cafeformat1.cover}}" alt="To Go">
 
                     <div class="more" id="more1">
                         <div class="more-description">
@@ -136,15 +136,15 @@ cafeformats:
                      </div>
                 </div>
                 <div>
-                    <p class="dark">10-20 м2</p>
+                    <p class="dark">{{cafeformats.cafeformat1.size}}</p>
                 </div>
             </div>
             <div class="coffeehouse-table__el">
 
-                <h3 class="title">Дуже круто</h3>
+                <h3 class="title">{{cafeformats.cafeformat2.title}}</h3>
                 <div class="cover">
 
-                    <img src="../assets/images/cafe.webp" alt="To Go" >
+                    <img src="{{cafeformats.cafeformat2.cover}}" alt="To Go" >
                     <div class="more" id="more2">
                         <div class="more-description">
                             <p>
@@ -164,14 +164,14 @@ cafeformats:
                     </div>
                 </div>
                 <div>
-                    <p class="dark">20-60 м2</p>
+                    <p class="dark">{{cafeformats.cafeformat2.size}}</p>
                 </div>
             </div>
             <div class="coffeehouse-table__el">
 
-                <h3 class="title">Ну дуууууже круто! </h3>
+                <h3 class="title">{{cafeformats.cafeformat3.title}}</h3>
                 <div class="cover">
-                    <img src="../assets/images/cafe.webp" alt="To Go">
+                    <img src="{{cafeformats.cafeformat3.cover}}" alt="To Go">
 
                     <div class="more" id="more3">
                         <div class="more-description">
@@ -193,7 +193,7 @@ cafeformats:
                      </div>
                 </div>
                 <div>
-                    <p class="dark">60-100 м2</p>
+                    <p class="dark">{{cafeformats.cafeformat3.size}}</p>
                 </div>
             </div>
         </div>
@@ -214,9 +214,9 @@ cafeformats:
                     <div class="steps-create__line"></div>
                 </div>
                 <div class="steps-create__step-description">
-                    <p>- Пошук приміщення </p>
-                    <p>- Розрахунок фінансової моделі </p>
-                    <p>- Дизайн-проект</p>
+                    {%- for el in steps.3step -%}
+                     <p>{{ el.step }}</p>
+                    {%- endfor -%}
                 </div>
             </div>
             <div class="steps-create__step">
@@ -233,7 +233,7 @@ cafeformats:
                 </div>
                 <div class="steps-create__step-description">
                     {%- for el in steps.2step -%}
-                        <li>{{ el.step }}</li>
+                        <p>{{ el.step }}</p>
                     {%- endfor -%}
                 </div>
             </div>
@@ -250,9 +250,9 @@ cafeformats:
                     <div class="steps-create__line"></div>
                 </div>
                 <div class="steps-create__step-description">
-                    <p>- Пошук та навчання персоналу</p>
-                    <p>- Наповнення складу</p>
-                    <p>- Запуск діджитал реклами</p>
+                    {%- for el in steps.3step -%}
+                        <p>{{ el.step }}</p>
+                    {%- endfor -%}
                 </div>
             </div>
             <div class="steps-create__step">
@@ -261,7 +261,6 @@ cafeformats:
                 </div>
                 <h3 class="steps-create__step-title">
                     {{steps.4steptitle}}
-
                 </h3>
             </div> 
             <div class="steps-create__with-line-container">
@@ -269,10 +268,9 @@ cafeformats:
                     <div class="steps-create__line"></div>
                 </div>
                 <div class="steps-create__step-description">
-                   
-                    <p>- Технічне відкриття</p>
-                    <p>- Стажування персоналу </p>
-                    <p>- Урочисте відкриття</p>
+                    {%- for el in steps.3step -%}
+                        <p>{{ el.step }}</p>
+                    {%- endfor -%}
                 </div>
             </div>
             <div class="steps-create__step">
