@@ -147,6 +147,12 @@ fields:
       label: size
     - name: details
       type: field_group_list
+      fields:
+      - name: detail
+        type: text
+        config:
+          required: false
+        label: detail
       config:
         min: 
         max: 
@@ -174,6 +180,12 @@ fields:
       label: size
     - name: details
       type: field_group_list
+      fields:
+      - name: detail
+        type: text
+        config:
+          required: false
+        label: detail
       config:
         min: 
         max: 
@@ -201,6 +213,12 @@ fields:
       label: size
     - name: details
       type: field_group_list
+      fields:
+      - name: detail
+        type: text
+        config:
+          required: false
+        label: detail
       config:
         min: 
         max: 
