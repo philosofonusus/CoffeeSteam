@@ -20,4 +20,10 @@ fields:
 - name: 1step
   type: field_group
   config: {}
+  fields:
+  - name: step
+    type: text
+    config:
+      required: false
+    label: step
   label: 1step
