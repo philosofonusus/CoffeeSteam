@@ -115,13 +115,13 @@ fields:
       config:
         required: false
       label: size
-    - name: steps
+    - name: details
       type: field_group_list
       config:
         min: 
         max: 
         labelField: 
-      label: steps
+      label: details
     label: cafeFormat1
   - name: cafeformat2
     type: field_group
@@ -142,13 +142,13 @@ fields:
       config:
         required: false
       label: size
-    - name: steps
+    - name: details
       type: field_group_list
       config:
         min: 
         max: 
         labelField: 
-      label: steps
+      label: details
     label: cafeFormat2
   - name: cafeformat3
     type: field_group
@@ -169,13 +169,13 @@ fields:
       config:
         required: false
       label: size
-    - name: steps
+    - name: details
       type: field_group_list
       config:
         min: 
         max: 
         labelField: 
-      label: steps
+      label: details
     label: cafeFormat3
   label: cafeFormats
 pages:
