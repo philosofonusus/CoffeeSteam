@@ -1,0 +1,328 @@
+---
+title: Steam - Coffee Franchise
+description: Ми мережу кав'ярень третьої хвилі «Steam» працюємо з 2017 року. Наші
+  цінності – це реалізація прибуткових людиноорієнтованих проектів, в основі яких
+  лежить якість продукту, сильна та єдина команда, розвиток кавової культури у відповідності
+  до світових трендів. Ми просто любимо свою роботу та цінуємо ваш час.
+headerTitle: ЗВАЖСЯ НА УСПІX
+headerDescription: Територія вільна від акцій, маркетингу та соціальних істерик. Ми
+  просто любимо свою роботу та цінуємо ваш час.
+layout: base.njk
+steps:
+  1step:
+  - step: "- Пошук приміщення"
+  - step: "- Розрахунок фінансової моделі"
+  - step: "- Дизайн-проект"
+  2step:
+  - step: "- Будівельні роботи"
+  - step: "- Виготовлення меблів"
+  - step: "- Замовлення обладнання та інвентарю"
+  - step: "- Замовлення рекламних конструкцій"
+  3step:
+  - step: "- Пошук та навчання персоналу"
+  - step: "- Наповнення складу"
+  - step: "- Пошук та навчання персоналу"
+  4step:
+  - step: "- Технічне відкриття"
+  - step: "- Стажування персоналy"
+  - step: "- Урочисте відкриття"
+  5step:
+  - step: "- Рекламна кампанія"
+  - step: "- Атестація персоналу"
+  - step: "- Навчання адміністратора"
+  - step: "- Передача проекту франчайзі"
+  1steptitle: Створення бізнес-плану
+  2steptitle: Основні роботи
+  3steptitle: Підготовка до відкриття
+  4steptitle: Bідкриття
+  5steptitle: Вихід у прибуток
+entrybackground: "/assets/images/entry_hero3.webp"
+aboutusimage: "/assets/images/group4.png"
+cafeformats:
+  cafeformat1:
+    cover: "/assets/images/cafe.webp"
+    title: Круто To Go
+    size: 10-20 м2
+    details:
+    - detail: Інтер‘єр - &#60;$325 м2
+    - detail: Меблі - &#60;$6000
+    - detail: Брендування - &#60;$800
+    - detail: Обладнання - &#60;$3000
+    - detail: Інвентар - &#60;$1500
+    - detail: Склад - &#60;$1500
+    - detail: Аренда - &#60;$29
+    - detail: Паушальний внесок - $2000+10%
+    - detail: Рекламна кампанія - &#60;$500
+  cafeformat2:
+    cover: "/assets/images/cafe.webp"
+    title: Дуже круто
+    size: 20-60 м2
+    details:
+    - detail: Інтер‘єр - &#60;$325 м2
+    - detail: Меблі - &#60;$10000
+    - detail: Брендування - &#60;$1000
+    - detail: Обладнання - &#60;$5000
+    - detail: Інвентар - &#60;$1500
+    - detail: Склад - &#60;$1500
+    - detail: Аренда - &#60;$29
+    - detail: Паушальний внесок - $2000+10%
+    - detail: Рекламна кампанія - &#60;$ 500
+  cafeformat3:
+    cover: "/assets/images/cafe.webp"
+    title: Ну дуууууже круто!
+    size: 60-100 м2
+    details:
+    - detail: Інтер‘єр - &#60;$325 м2
+    - detail: Меблі - &#60;$18000
+    - detail: Брендування -&#60;$1500
+    - detail: Обладнання - &#60;$7000
+    - detail: Інвентар - &#60;$2000
+    - detail: Склад - &#60;$2000
+    - detail: Аренда - &#60;$29
+    - detail: Паушальний внесок - $2000+10%
+    - detail: Рекламна кампанія - &#60;$500
+
+---
+<section class="about" id="about">
+        <div class="about__container">
+            <div class="about__content">
+                <div class="about-text__container">
+                    <span class="about-text__pretitle">
+                        Хто ми
+                    </span>
+                    <h2 class="about-text__title">
+                         Команда "<span>Steam</span>"
+                    </h2>
+                    <p class="about-text__description">
+                        <span class="typing"></span>
+                    </p>
+                </div>
+                <img src="{{aboutusimage}}" alt="Super Team">  
+            </div>
+
+        </div>
+    </section>
+    <section class="label" id="investitions">
+        <img class="label__logo" src="../assets/images/logo.png" alt="steam">
+        <h2 class="label__title">Інвестиції</h2>
+    </section>
+    <section class="coffeehouse">
+        <h2 class="coffeehouse__title">Формати проєктів</h2>
+        <div class="coffeehouse-table">
+            <div class="coffeehouse-table__el">
+
+                <h3 class="title">{{cafeformats.cafeformat1.title}}</h3>
+                <div class="cover">
+                    <img src="{{cafeformats.cafeformat1.cover}}" alt="To Go">
+
+                    <div class="more" id="more1">
+                        <div class="more-description">
+                            <p>
+                                {%- for el in cafeformats.cafeformat1.details -%}
+                                     {{ el.detail }}<br>
+                               {%- endfor -%}
+
+                            </p>
+                        </div>
+                        <span class="more-title" id="more-button1">
+                            Детальніше
+                        </span>
+                     </div>
+                </div>
+                <div>
+                    <p class="dark">{{cafeformats.cafeformat1.size}}</p>
+                </div>
+            </div>
+            <div class="coffeehouse-table__el">
+
+                <h3 class="title">{{cafeformats.cafeformat2.title}}</h3>
+                <div class="cover">
+
+                    <img src="{{cafeformats.cafeformat2.cover}}" alt="To Go" >
+                    <div class="more" id="more2">
+                        <div class="more-description">
+                            <p>
+                                {%- for el in cafeformats.cafeformat2.details -%}
+                                    {{ el.detail }}<br>
+                                {%- endfor -%}
+                            </p>
+                        </div>
+                       <span class="more-title" id="more-button2">
+                        Детальніше
+                       </span>
+                    </div>
+                </div>
+                <div>
+                    <p class="dark">{{cafeformats.cafeformat2.size}}</p>
+                </div>
+            </div>
+            <div class="coffeehouse-table__el">
+
+                <h3 class="title">{{cafeformats.cafeformat3.title}}</h3>
+                <div class="cover">
+                    <img src="{{cafeformats.cafeformat3.cover}}" alt="To Go">
+
+                    <div class="more" id="more3">
+                        <div class="more-description">
+                            <p>
+                                {%- for el in cafeformats.cafeformat3.details -%}
+                                 {{ el.detail }}<br>
+                                {%- endfor -%}
+                            </p>
+                        </div>
+                        <span class="more-title" id="more-button3">
+                            Детальніше
+                        </span>
+                     </div>
+                </div>
+                <div>
+                    <p class="dark">{{cafeformats.cafeformat3.size}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="steps-create" id="steps">
+        <h2 class="steps-create__title">5 кроків для відкриття кав‘ярні <span>“Steam”</span></h2>
+        <div class="steps-create__container">
+            <div class="steps-create__step">
+                <div class="steps-create__bubble">
+                  1
+                </div>
+                <h3 class="steps-create__step-title">
+                    {{steps.1steptitle}}
+                </h3>
+            </div>
+            <div class="steps-create__with-line-container">
+                <div class="steps-create__line-container">
+                    <div class="steps-create__line"></div>
+                </div>
+                <div class="steps-create__step-description">
+                    {%- for el in steps.3step -%}
+                     <p>{{ el.step }}</p>
+                    {%- endfor -%}
+                </div>
+            </div>
+            <div class="steps-create__step">
+                <div class="steps-create__bubble">
+                  2
+                </div>
+                <h3 class="steps-create__step-title">
+                    {{steps.2steptitle}}
+                </h3>
+            </div>
+            <div class="steps-create__with-line-container">
+                <div class="steps-create__line-container">
+                    <div class="steps-create__line"></div>
+                </div>
+                <div class="steps-create__step-description">
+                    {%- for el in steps.2step -%}
+                        <p>{{ el.step }}</p>
+                    {%- endfor -%}
+                </div>
+            </div>
+            <div class="steps-create__step">
+                <div class="steps-create__bubble">
+                  3
+                </div>
+                <h3 class="steps-create__step-title">
+                    {{steps.3steptitle}}
+                </h3>
+            </div>
+            <div class="steps-create__with-line-container">
+                <div class="steps-create__line-container">
+                    <div class="steps-create__line"></div>
+                </div>
+                <div class="steps-create__step-description">
+                    {%- for el in steps.3step -%}
+                        <p>{{ el.step }}</p>
+                    {%- endfor -%}
+                </div>
+            </div>
+            <div class="steps-create__step">
+                <div class="steps-create__bubble">
+                  4
+                </div>
+                <h3 class="steps-create__step-title">
+                    {{steps.4steptitle}}
+                </h3>
+            </div> 
+            <div class="steps-create__with-line-container">
+                <div class="steps-create__line-container">
+                    <div class="steps-create__line"></div>
+                </div>
+                <div class="steps-create__step-description">
+                    {%- for el in steps.4step -%}
+                        <p>{{ el.step }}</p>
+                    {%- endfor -%}
+                </div>
+            </div>
+            <div class="steps-create__step">
+                <div class="steps-create__bubble">
+                  5
+                </div>
+                <h3 class="steps-create__step-title">
+                    {{steps.5steptitle}}
+                </h3>
+            </div>
+            <div class="steps-create__with-line-container">
+                <div class="steps-create__line-container">
+                    <div class="steps-create__line"></div>
+                </div>
+                <div class="steps-create__step-description">
+                    {%- for el in steps.5step -%}
+                        <p>{{ el.step }}</p>
+                    {%- endfor -%}
+                </div>
+            </div>
+            <div class="steps-create__container_end">
+                <img src="../assets/images/logo.png" alt="Steam">
+
+
+                <a href="/#contact">
+                <button class="steps-create__button">
+                    Зв‘язатися
+                </button>
+
+                </a>
+            </div>
+            </div>
+    </section>
+    <section class="compounds" id="franchise">
+        <div class="compounds__title-container">
+            <h2 class="compounds__title">
+                Складові франшизи "<span>Steam</span>"
+                
+            </h2>
+            <span class="compounds__subtitle">
+                або що ви отримуєте?
+            </span>
+        </div>
+        <div class="container">
+            <div class="compounds__block"></div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <form class="contact-form" 
+        action="https://formspree.io/f/xeqnqvyz"
+        method="POST">
+            <h2>
+                ЗВ'ЯЖІТЬСЯ З НАМИ
+            </h2>
+            <div class="container">
+                <div>
+                    <input type="text" name="name" placeholder="Ім'я">
+
+                    <input type="tel" name="phone" placeholder="Контактний телефон">
+                </div>
+                <div>
+                    <input type="text" name="place" placeholder="Місце відкриття кав'ярні">
+
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+            </div>
+            <input type="text" name="message" class="msg" placeholder="Повідомлення">
+            <button type="submit">
+                ВІДПРАВИТИ
+            </button>
+        </form>
+    </section>
