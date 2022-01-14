@@ -5,6 +5,14 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: src/en/index.html
+  label: enIndex
+  match: "**/*"
+- type: document
+  path: src/ru/index.html
+  label: ruIndex
+  match: "**/*"
+- type: document
   path: src/index.html
   label: ukrIndex
 upload_dir: src/assets/images
