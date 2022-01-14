@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: ru/index.html
+  label: ruIndex
+  match: "**/*"
+- type: document
   path: en/index.html
   label: enIndex
   match: "**/*"
