@@ -228,3 +228,4 @@ fields:
   label: cafeFormats
 pages:
 - src/index.html
+- src/ru/index.html
